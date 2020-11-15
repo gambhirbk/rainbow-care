@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import ResourcesMain from "./components/resources-main/ResourcesMain"
+import ResourcesConsent from "./components/resources-consent/ResourcesConsent"
+import Xiaoxia from "./components/xiaoxia/Xiaoxia"
+import Yiyu from "./components/yiyu/Yiyu"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return <div className="App">
+      <ResourcesMain />
+      {/* REPLACE 'ResourcesMain' WITH YOUR OWN OBJECT!! */}
+      </div>;
+  }
 }
 
 export default App;
