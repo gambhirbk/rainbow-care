@@ -1,13 +1,7 @@
 import React, { Component } from "react";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
-
-const styles = {
-  container: {
-    height: "800px",
-    backgroundColor: "#D3F8FF",
-  },
-};
+import styles from "./TemplateStyles"
 
 class Template extends Component {
   constructor(props) {
@@ -20,7 +14,9 @@ class Template extends Component {
       <div>
         <Header />
         {/*content prop is what is to be included inside template*/}
-        <div style={styles.container}>{this.props.content}</div>
+        <div style={styles.container}>
+          <div style={styles.content}>{this.props.content}</div>
+        </div>
         <Footer />
       </div>
     );

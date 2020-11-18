@@ -7,8 +7,8 @@ import Yiyu from "./components/yiyu/Yiyu"
 class App extends Component {
   render() {
     return <div className="App">
-      <Template />
-      {/* REPLACE 'ResourcesMain' WITH YOUR OWN OBJECT!! */}
+      <Template content={<ResourcesConsent />}/>
+      {/* REPLACE 'ResourcesConsent' WITH YOUR OWN OBJECT!! */}
       </div>;
   }
 }

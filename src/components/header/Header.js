@@ -1,30 +1,11 @@
 import React, { Component } from "react";
-
-const styles = {
-  headerBar: {
-    backgroundColor: "#2699FB",
-  },
-  button: {
-    border: "none",
-    padding: 20,
-    marginLeft: 50,
-    fontSize: "20px",
-    backgroundColor: "#2699FB",
-    color: "white",
-  },
-  search: {
-    display: "inline",
-    float: "right",
-    padding: 15,
-    marginRight: 50,
-  },
-};
+import styles from "./HeaderStyles"
 
 class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      search: "search...",
+      search: "",
     };
   }
 
@@ -37,6 +18,12 @@ class Header extends Component {
     });
   };
 
+  onSearch = (e) => {
+    // TODO: replace with real search functionality
+    e.preventDefault();
+    console.log(this.state.search);
+  };
+
   render() {
     return (
       <div>
@@ -44,13 +31,22 @@ class Header extends Component {
           <button style={styles.button}>HOME</button>
           <button style={styles.button}>RESOURCES</button>
           <button style={styles.button}>BODY STORIES</button>
-          <form style={styles.search}>
+          <form style={styles.search} onSubmit={this.onSearch}>
             <input
               type="text"
               name="search"
               value={this.state.search}
+              placeholder="search..."
               onChange={this.handleChange}
             />
+            {/*html form button - default behavior is onSubmit*/}
+            <button style={styles.searchButton}>
+              <img
+                src="./img/search.png"
+                alt="Search button"
+                style={styles.searchButton}
+              />
+            </button>
           </form>
         </div>
       </div>
