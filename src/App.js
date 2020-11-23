@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ResourcesMain from "./components/resources-main/ResourcesMain";
 import ResourcesConsent from "./components/resources-consent/ResourcesConsent";
+import ResourcesCategories from "./components/resources-categories/ResourcesCategories";
+import ResourcePage from "./components/resources-categories/resource-page/ResourcePage";
 import Xiaoxia from "./components/xiaoxia/Xiaoxia";
 import Yiyu from "./components/yiyu/Yiyu";
 import Header from "./components/header/Header";
@@ -14,7 +16,14 @@ class App extends Component {
         <div style={styles.container}>
           <Header />
           {/* replace ResourcesMain with your component to render locally */}
-          <ResourcesMain />
+          <ResourcePage
+            header={"A Resource"}
+            body={
+              "Text body goes here Text body goes here Text body goes here Text body goes here Text body goes here Text body goes here Text body goes here Text body goes here"
+            }
+            citations={["link_one", "link_two", "link_three"]}
+            image={"./img/stock.jpg"}
+          />
         </div>
         <Footer />
       </div>
