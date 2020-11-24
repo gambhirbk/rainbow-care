@@ -9,6 +9,30 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import styles from "./components/TemplateStyles";
 
+const links = [
+  {
+    title: "Health",
+    pages: [
+      "page one",
+      "page two"
+    ]
+  },
+  {
+    title: "Other Title",
+    pages: [
+      "page one 2",
+      "page two 3"
+    ]
+  },
+  {
+    title: "Third Title",
+    pages: [
+      "page one 3",
+      "page two 4"
+    ]
+  }
+]
+
 class App extends Component {
   render() {
     return (
@@ -16,14 +40,7 @@ class App extends Component {
         <div style={styles.container}>
           <Header />
           {/* replace ResourcesMain with your component to render locally */}
-          <ResourcePage
-            header={"A Resource"}
-            body={
-              "Text body goes here Text body goes here Text body goes here Text body goes here Text body goes here Text body goes here Text body goes here Text body goes here"
-            }
-            citations={["link_one", "link_two", "link_three"]}
-            image={"./img/stock.jpg"}
-          />
+          <ResourcesCategories categories={links}/>
         </div>
         <Footer />
       </div>

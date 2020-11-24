@@ -1,20 +1,20 @@
 const styles = {
   title: {
     fontSize: 30,
-    marginLeft: 150,
-    marginBottom: 15
+    marginLeft: 10,
+    marginBottom: 10
   },
   body: {
     float: "center",
-    marginLeft: 150,
+    marginLeft: 100,
     width: 500,
     marginBottom: 30,
   },
   citations: {
     border: "1px solid #CDC7C2",
     borderRadius: 3,
-    marginLeft: 150,
-    width: 80,
+    marginLeft: 100,
+    width: 100,
   },
   citation: {
       marginLeft: 10,
