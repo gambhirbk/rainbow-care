@@ -8,30 +8,8 @@ import Yiyu from "./components/yiyu/Yiyu";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import styles from "./components/TemplateStyles";
-
-const links = [
-  {
-    title: "Health",
-    pages: [
-      "page one",
-      "page two"
-    ]
-  },
-  {
-    title: "Other Title",
-    pages: [
-      "page one 2",
-      "page two 3"
-    ]
-  },
-  {
-    title: "Third Title",
-    pages: [
-      "page one 3",
-      "page two 4"
-    ]
-  }
-]
+import { Route, Switch } from "react-router-dom";
+import { links, mockData } from "./components/data/data";
 
 class App extends Component {
   render() {
@@ -39,8 +17,22 @@ class App extends Component {
       <div className="App">
         <div style={styles.container}>
           <Header />
-          {/* replace ResourcesMain with your component to render locally */}
-          <ResourcesCategories categories={links}/>
+          <Switch>
+            <Route path="/Mock" exact>
+              <ResourcePage
+                header={mockData.header}
+                body={mockData.body}
+                image={mockData.image}
+                citations={mockData.citations}
+              />
+            </Route>
+            <Route path="/categories" exact>
+              <ResourcesCategories categories={links} />
+            </Route>
+            <Route path="/resources" exact>
+              <ResourcesMain />
+            </Route>
+          </Switch>
         </div>
         <Footer />
       </div>

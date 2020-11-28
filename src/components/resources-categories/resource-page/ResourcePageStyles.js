@@ -1,7 +1,7 @@
 const styles = {
   title: {
     fontSize: 30,
-    marginLeft: 10,
+    marginLeft: 100,
     marginBottom: 10
   },
   body: {
@@ -14,7 +14,7 @@ const styles = {
     border: "1px solid #CDC7C2",
     borderRadius: 3,
     marginLeft: 100,
-    width: 100,
+    width: 350
   },
   citation: {
       marginLeft: 10,

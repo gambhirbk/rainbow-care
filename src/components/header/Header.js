@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import styles from "./HeaderStyles"
+import styles from "./HeaderStyles";
+import { withRouter } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
@@ -29,7 +30,12 @@ class Header extends Component {
       <div>
         <div style={styles.headerBar}>
           <button style={styles.button}>HOME</button>
-          <button style={styles.button}>RESOURCES</button>
+          <button
+            style={styles.button}
+            onClick={() => this.props.history.push("/resources")}
+          >
+            RESOURCES
+          </button>
           <button style={styles.button}>BODY STORIES</button>
           <form style={styles.search} onSubmit={this.onSearch}>
             <input
@@ -54,4 +60,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default withRouter(Header);

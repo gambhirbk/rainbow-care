@@ -1,5 +1,6 @@
 import styles from "./ResourceMainStyles";
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 
 class ResourcesMain extends Component {
   render() {
@@ -7,7 +8,7 @@ class ResourcesMain extends Component {
       <div>
         <div style={styles.header}>Resources</div>
         <div style={styles.buttonRow}>
-          <button style={styles.button}>By Category</button>
+          <button style={styles.button} onClick={() => this.props.history.push('/categories')}>By Category</button>
           <button style={styles.button}>Healthcare Providers</button>
           <button style={styles.button}>Consent</button>
         </div>
@@ -16,4 +17,4 @@ class ResourcesMain extends Component {
   }
 }
 
-export default ResourcesMain;
+export default withRouter(ResourcesMain);
