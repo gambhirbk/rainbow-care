@@ -9,8 +9,8 @@ class ResourcesMain extends Component {
         <div style={styles.header}>Resources</div>
         <div style={styles.buttonRow}>
           <button style={styles.button} onClick={() => this.props.history.push('/categories')}>By Category</button>
-          <button style={styles.button}>Healthcare Providers</button>
-          <button style={styles.button}>Consent</button>
+          <button style={styles.button} onClick={() => this.props.history.push('/providers')}>Healthcare Providers</button>
+          <button style={styles.button} onClick={() => this.props.history.push('/consent_resources')}>Consent</button>
         </div>
       </div>
     );

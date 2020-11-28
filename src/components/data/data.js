@@ -5,11 +5,11 @@ export const links = [
   },
   {
     title: "Unfinished",
-    pages: ["https://www.google.com/", "https://www.google.com/"],
+    pages: ["nothing", "nothing_here"],
   },
   {
     title: "Unfinished Cont.",
-    pages: ["https://www.google.com/", "https://www.google.com/"],
+    pages: ["nothing", "nothing_here"],
   },
 ];
 

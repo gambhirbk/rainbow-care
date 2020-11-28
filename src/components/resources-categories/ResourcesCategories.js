@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from "./ResourcesCategoriesStyles";
+import { Link, withRouter } from "react-router-dom";
 
 class ResourcesCategories extends Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class ResourcesCategories extends Component {
               <div>
                 {group.pages.map((link, j) => (
                   <div key={j} style={styles.resource}>
-                    <a href={link}>{link}</a>
+                    <Link to={link}>{link}</Link>
                   </div>
                 ))}
               </div>
@@ -30,4 +31,4 @@ class ResourcesCategories extends Component {
   }
 }
 
-export default ResourcesCategories;
+export default withRouter(ResourcesCategories);

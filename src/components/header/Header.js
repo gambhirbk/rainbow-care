@@ -20,23 +20,28 @@ class Header extends Component {
   };
 
   onSearch = (e) => {
-    // TODO: replace with real search functionality
     e.preventDefault();
-    console.log(this.state.search);
+    // route to searched endpoint
+    this.props.history.push(this.state.search)
   };
 
   render() {
     return (
       <div>
         <div style={styles.headerBar}>
-          <button style={styles.button}>HOME</button>
+          <button
+            style={styles.button}
+            onClick={() => this.props.history.push("/")}
+          >
+            HOME
+          </button>
           <button
             style={styles.button}
             onClick={() => this.props.history.push("/resources")}
           >
             RESOURCES
           </button>
-          <button style={styles.button}>BODY STORIES</button>
+          <button style={styles.button} onClick={() => this.props.history.push("/bodystories")}>BODY STORIES</button>
           <form style={styles.search} onSubmit={this.onSearch}>
             <input
               type="text"
