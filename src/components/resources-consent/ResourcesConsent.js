@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styles from "./ResourcesConsentStyles";
 
 class ResourcesConsent extends Component {
   constructor(props) {
@@ -11,7 +12,8 @@ class ResourcesConsent extends Component {
   render() {
     return (
       <div>
-        Gambhir's component
+        <h1 style={{textAlign: "center"}}> Learn about consent </h1> 
+        {/* <button style={styles.button} onClick={() => '/ResourcesOptions'} >Learn More</button> */}
       </div>
     );
   }

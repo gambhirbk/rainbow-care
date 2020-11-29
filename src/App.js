@@ -6,17 +6,18 @@ import Yiyu from "./components/yiyu/Yiyu";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import styles from "./components/TemplateStyles";
+import ResourcesOptions from "./components/resources-consent/ResourcesOptions";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div style={styles.container}>
-          <Header />
           {/* replace ResourcesMain with your component to render locally */}
-          <ResourcesMain />
+          <ResourcesOptions> 
+
+          </ResourcesOptions>
         </div>
-        <Footer />
       </div>
     );
   }
