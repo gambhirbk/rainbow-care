@@ -1,23 +1,11 @@
 export const links = [
   {
-    title: "Health",
+    title: "Health and Wellness",
     pages: ["Mock"],
   },
   {
-    title: "Unfinished",
-    pages: ["nothing", "nothing_here"],
-  },
-  {
-    title: "Unfinished Cont.",
-    pages: ["nothing", "nothing_here"],
-  },
-  {
-    title: "New Title 4",
-    pages: ["nothing", "nothing_here", "still nothing here"],
-  },
-  {
-    title: "New Category 5",
-    pages: ["ashjdfkahsdjkfa", "something"],
+    title: "Sex",
+    pages: ["nothing"],
   },
 ];
 
