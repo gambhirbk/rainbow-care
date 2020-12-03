@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import ResourcesMain from "./components/resources-main/ResourcesMain";
 import ResourcesCategories from "./components/resources-categories/ResourcesCategories";
 import ResourcePage from "./components/resources-categories/resource-page/ResourcePage";
-import Error from "./components/Error"
+import Error from "./components/Error";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import styles from "./components/TemplateStyles";
-import Faq from "./components/faq/Faq"
+import Faq from "./components/faq/Faq";
 import { Route, Switch } from "react-router-dom";
-import { links, mockData } from "./components/data/data";
-import BodyBlog from "./components/body-blog/BodyBlog"
+import { links, mockData, faqData } from "./components/data/data";
+import BodyBlog from "./components/body-blog/BodyBlog";
 
 class App extends Component {
   render() {
@@ -36,7 +36,7 @@ class App extends Component {
               <BodyBlog />
             </Route>
             <Route path="/faq" exact>
-              <Faq />
+              <Faq data={faqData} />
             </Route>
             <Route path="/" exact>
               {/* our home page will go here! */}

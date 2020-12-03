@@ -1,14 +1,23 @@
 import React, { Component } from "react";
-import { withRouter } from "react-router-dom";
+import styles from "./FaqStyles";
 
 class Faq extends Component {
+
   render() {
     return (
       <div>
-          Faq page
+        <div style={styles.header}>Frequently Asked Questions (FAQ)</div>
+        <div>
+          {this.props.data.map((item, i) => (
+            <div key={i}>
+              <div style={styles.faqHeader}>{item.title}</div>
+              <div style={styles.faqBody}>{item.body}</div>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
 }
 
-export default withRouter(Faq);
+export default Faq;
