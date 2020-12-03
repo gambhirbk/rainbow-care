@@ -11,6 +11,14 @@ export const links = [
     title: "Unfinished Cont.",
     pages: ["nothing", "nothing_here"],
   },
+  {
+    title: "New Title 4",
+    pages: ["nothing", "nothing_here", "still nothing here"],
+  },
+  {
+    title: "New Category 5",
+    pages: ["ashjdfkahsdjkfa", "something"],
+  },
 ];
 
 export const mockData = {
