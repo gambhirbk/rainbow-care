@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import ResourcesMain from "./components/resources-main/ResourcesMain";
-import ResourcesConsent from "./components/resources-consent/ResourcesConsent";
-import Xiaoxia from "./components/xiaoxia/Xiaoxia";
-import Yiyu from "./components/yiyu/Yiyu";
+import ResourcesCategories from "./components/resources-categories/ResourcesCategories";
+import ResourcePage from "./components/resources-categories/resource-page/ResourcePage";
+import Error from "./components/Error"
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import styles from "./components/TemplateStyles";
+import { Route, Switch } from "react-router-dom";
+import { links, mockData } from "./components/data/data";
+import BodyBlog from "./components/body-blog/BodyBlog"
 
 class App extends Component {
   render() {
@@ -13,8 +16,32 @@ class App extends Component {
       <div className="App">
         <div style={styles.container}>
           <Header />
-          {/* replace ResourcesMain with your component to render locally */}
-          <ResourcesMain />
+          <Switch>
+            <Route path="/Mock" exact>
+              <ResourcePage
+                header={mockData.header}
+                body={mockData.body}
+                image={mockData.image}
+                citations={mockData.citations}
+              />
+            </Route>
+            <Route path="/categories" exact>
+              <ResourcesCategories categories={links} />
+            </Route>
+            <Route path="/resources" exact>
+              <ResourcesMain />
+            </Route>
+            <Route path="/bodystories" exact>
+              <BodyBlog />
+            </Route>
+            <Route path="/" exact>
+              {/* our home page will go here! */}
+            </Route>
+            <Route>
+              {/* if the switch statement isn't resolved, render error component */}
+              <Error />
+            </Route>
+          </Switch>
         </div>
         <Footer />
       </div>
