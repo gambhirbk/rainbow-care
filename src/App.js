@@ -1,10 +1,5 @@
 import React, { Component } from "react";
-import ResourcesMain from "./components/resources-main/ResourcesMain";
-import ResourcesConsent from "./components/resources-consent/ResourcesConsent";
-import Xiaoxia from "./components/xiaoxia/Xiaoxia";
-import Yiyu from "./components/yiyu/Yiyu";
 import styles from "./components/TemplateStyles";
-import ResourcesOptions from "./components/resources-consent/ResourcesOptions";
 import Header from "./components/header/Header";
 import Content from "./components/resources-consent/Content";
 
