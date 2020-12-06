@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import styles from "./components/TemplateStyles";
 import Header from "./components/header/Header";
-import Content from "./components/resources-consent/Content";
+// import Content from "./components/resources-consent/Content";
+// import ConsentMainPage from "./components/resources-consent/ConsentMainPage";
+import Glossary from "./components/resources-consent/Glossary";
 
 class App extends Component {
   render() {
@@ -11,8 +13,8 @@ class App extends Component {
           {/* replace ResourcesMain with your component to render locally */}
         <Header> 
         </Header>
-          <Content> 
-          </Content>
+          <Glossary>
+          </Glossary>
         </div>
       </div>
     );
