@@ -8,7 +8,6 @@ import Footer from "./components/footer/Footer";
 import styles from "./components/TemplateStyles";
 import Faq from "./components/faq/Faq";
 import { Route, Switch } from "react-router-dom";
-import { links, mockData } from "./components/data/data";
 import BodyBlog from "./components/body-blog/BodyBlog";
 import BlogMain from "./components/body-blog/BlogMain";
 import BlogModal from "./components/body-blog/BlogModal";
