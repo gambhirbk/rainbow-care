@@ -10,6 +10,10 @@ import Faq from "./components/faq/Faq";
 import { Route, Switch } from "react-router-dom";
 import { links, pages, faqData } from "./components/data/data";
 import BodyBlog from "./components/body-blog/BodyBlog";
+import Glossary from "./components/resources-consent/glossary/Glossary"
+import ConsentMainPage from "./components/resources-consent/content-main/ConsentMainPage"
+import Content from "./components/resources-consent/content/Content"
+import HealthcareProviders from "./components/resources-consent/HealthcareProviders"
 
 class App extends Component {
   render() {
@@ -18,6 +22,18 @@ class App extends Component {
         <div style={styles.container}>
           <Header />
           <Switch>
+          <Route path="/glossary" exact>
+            <Glossary />
+          </Route>
+          <Route path="/consent_main" exact>
+            <ConsentMainPage />
+          </Route>
+          <Route path="/consent_resources" exact>
+            <Content />
+          </Route>
+          <Route path="/providers" exact>
+            <HealthcareProviders />
+          </Route>
             <Route path="/PrEP" exact>
               <ResourcePage
                 header={pages.PrEP.header}
