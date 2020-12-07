@@ -8,7 +8,10 @@ import Footer from "./components/footer/Footer";
 import styles from "./components/TemplateStyles";
 import { Route, Switch } from "react-router-dom";
 import { links, mockData } from "./components/data/data";
-import BodyBlog from "./components/body-blog/BodyBlog"
+import BodyBlog from "./components/body-blog/BodyBlog";
+import BlogMain from "./components/body-blog/BlogMain";
+import BlogModal from "./components/body-blog/BlogModal";
+import BlogWriting from "./components/body-blog/BlogWriting"
 
 class App extends Component {
   render() {
@@ -32,7 +35,14 @@ class App extends Component {
               <ResourcesMain />
             </Route>
             <Route path="/bodystories" exact>
+              <BlogMain />
+            </Route>
+            <Route path="/bodyblogs" exact>
               <BodyBlog />
+            </Route>
+            <Route path="/blogmodal" exact>
+              {/* modified */}
+              <BlogWriting />  
             </Route>
             <Route path="/" exact>
               {/* our home page will go here! */}

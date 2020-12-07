@@ -13,6 +13,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
+import BookmarkIcon from '@material-ui/icons/Bookmark';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -43,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(3)
   },
   card: {
-    maxWidth: "100%",
+    maxWidth: "90%",
   },
   media: {
     height: 240
@@ -62,6 +63,22 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+// const Clicked = () => {
+//   const [clicked, setClicked] = useState(false)
+//   const handleIconClick = () => {
+//        setClicked(true)
+//       // change <AddCircleIcon /> to <BlockIcon /> at "id"
+//   }
+//   return (
+//       <List component="nav">
+//           <ListItem>
+//               <ListItem onClick={handleIconClick(101)}>
+//                   {clicked ? <BookmarkIcon /> : <BookmarkBorderIcon /> }
+//               </ListItem>
+//           </ListItem>
+//       </List>
+//   )
+// }
 function BodyBlog() {
   const classes = useStyles();
 
