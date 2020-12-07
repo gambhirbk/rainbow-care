@@ -8,8 +8,12 @@ import Footer from "./components/footer/Footer";
 import styles from "./components/TemplateStyles";
 import Faq from "./components/faq/Faq";
 import { Route, Switch } from "react-router-dom";
-import { links, mockData, faqData } from "./components/data/data";
+import { links, pages, faqData } from "./components/data/data";
 import BodyBlog from "./components/body-blog/BodyBlog";
+import Glossary from "./components/resources-consent/glossary/Glossary"
+import ConsentMainPage from "./components/resources-consent/content-main/ConsentMainPage"
+import Content from "./components/resources-consent/content/Content"
+import HealthcareProviders from "./components/resources-consent/HealthcareProviders"
 
 class App extends Component {
   render() {
@@ -18,12 +22,32 @@ class App extends Component {
         <div style={styles.container}>
           <Header />
           <Switch>
-            <Route path="/Mock" exact>
+          <Route path="/glossary" exact>
+            <Glossary />
+          </Route>
+          <Route path="/consent_main" exact>
+            <ConsentMainPage />
+          </Route>
+          <Route path="/consent_resources" exact>
+            <Content />
+          </Route>
+          <Route path="/providers" exact>
+            <HealthcareProviders />
+          </Route>
+            <Route path="/PrEP" exact>
               <ResourcePage
-                header={mockData.header}
-                body={mockData.body}
-                image={mockData.image}
-                citations={mockData.citations}
+                header={pages.PrEP.header}
+                body={pages.PrEP.body}
+                image={pages.PrEP.image}
+                citations={pages.PrEP.citations}
+              />
+            </Route>
+            <Route path="/TransLifeline" exact>
+              <ResourcePage
+                header={pages.TransLifeline.header}
+                body={pages.TransLifeline.body}
+                image={pages.TransLifeline.image}
+                citations={pages.TransLifeline.citations}
               />
             </Route>
             <Route path="/categories" exact>

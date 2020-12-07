@@ -41,6 +41,12 @@ class Header extends Component {
           >
             RESOURCES
           </button>
+          <button
+            style={styles.button}
+            onClick={() => this.props.history.push("/glossary")}
+          >
+            GLOSSARY
+          </button>
           <button style={styles.button} onClick={() => this.props.history.push("/bodystories")}>BODY STORIES</button>
           <form style={styles.search} onSubmit={this.onSearch}>
             <input
