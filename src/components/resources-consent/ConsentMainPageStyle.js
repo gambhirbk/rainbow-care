@@ -23,6 +23,7 @@ const styles = {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        marginBottom: 10,
     },
     button: {
         marginLeft: 35,
