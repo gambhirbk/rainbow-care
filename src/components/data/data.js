@@ -4,10 +4,6 @@ export const links = [
     pages: ["PrEP"],
   },
   {
-    title: "Identity and Gender",
-    pages: ["nothing"],
-  },
-  {
     title: "Forums and Outreach",
     pages: ["TransLifeline"],
   },
@@ -36,11 +32,11 @@ export const pages = {
 
 export const faqData = [
   {
-    title: "faq one",
-    body: "this is a faq body",
+    title: "What is Rainbow Care?",
+    body: "Rainbow Care is a compilation of identity-inclusive resources and tools.",
   },
   {
-    title: "faq two",
-    body: "this is another faq body",
+    title: "Is Rainbow Care for me?",
+    body: "Yes!",
   },
 ];

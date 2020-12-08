@@ -1,6 +1,9 @@
 const styles = {
     footerBar: {
       backgroundColor: "#84B4FF",
+      display: "flex", 
+      justifyContent: "center",
+      height: "40px",
     },
     button: {
       border: "none",

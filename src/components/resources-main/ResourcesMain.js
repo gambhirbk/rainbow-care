@@ -6,7 +6,7 @@ class ResourcesMain extends Component {
   render() {
     return (
       <div>
-        <div style={styles.header}>Resources</div>
+        <div style={styles.header}>RESOURCES</div>
         <div style={styles.buttonRow}>
           <button style={styles.button} onClick={() => this.props.history.push('/categories')}>By Category</button>
           <button style={styles.button} onClick={() => this.props.history.push('/providers')}>Healthcare Providers</button>

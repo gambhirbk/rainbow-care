@@ -4,7 +4,7 @@ const styles = {
         marginTop: 30,
         marginBottom: 10,
         textDecoration: "underline",
-        textAlign: "center"
+        textAlign: "center",
     },
     resource: {
         marginBottom: 5,

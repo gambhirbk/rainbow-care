@@ -85,19 +85,11 @@ function BodyBlog() {
   return (
     <div className="BodyBlog">
       <AppBar className={classes.appBar} position="static">
-        <Toolbar>
-          <Typography variant="h6" color="primary" >
-            My Body Stories
-          </Typography>
-        </Toolbar>
       </AppBar>
       <Box className={classes.hero}>
         <Box>My Body Stories</Box>
       </Box>
       <Container maxWidth="lg" className={classes.blogsContainer}>
-        <Typography variant="h4" className={classes.blogTitle}>
-          Articles
-        </Typography>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={4}>
             <Card className={classes.card}>

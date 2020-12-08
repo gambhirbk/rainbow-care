@@ -29,10 +29,10 @@ const styles = {
         marginLeft: 35,
         marginRight: 60,
         borderRadius: 5,
-        backgroundColor: "#2699FB",
+        backgroundColor: "#e5ebe4",
         border: "none",
         fontSize: 20,
-        color: "white",
+        color: "#037b82",
         padding: 10,
         marginBottom: 200,
         
