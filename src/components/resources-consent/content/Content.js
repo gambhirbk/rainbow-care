@@ -16,7 +16,7 @@ import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: "#fff"
+    backgroundColor: "#e5ebe4"
   },
   hero: {
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://admissions.uoregon.edu/sites/admissions1.uoregon.edu/files/Queer_Studies.jpg')`,
@@ -68,11 +68,6 @@ function Content() {
   return (
     <div className="Consent">
       <AppBar className={classes.appBar} position="static">
-        <Toolbar>
-          <Typography variant="h6" color="primary" >
-            Consent
-          </Typography>
-        </Toolbar>
       </AppBar>
       <Box className={classes.hero}>
         <Box fontStyle="italic">Consent</Box>

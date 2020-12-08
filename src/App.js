@@ -5,39 +5,37 @@ import ResourcePage from "./components/resources-categories/resource-page/Resour
 import Error from "./components/Error";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import styles from "./components/TemplateStyles";
 import Faq from "./components/faq/Faq";
 import { Route, Switch } from "react-router-dom";
 import BodyBlog from "./components/body-blog/BodyBlog";
 import BlogMain from "./components/body-blog/BlogMain";
-import BlogModal from "./components/body-blog/BlogModal";
-import BlogWriting from "./components/body-blog/BlogWriting"
+import BlogWriting from "./components/body-blog/BlogWriting";
 import { links, pages, faqData } from "./components/data/data";
-import Glossary from "./components/resources-consent/glossary/Glossary"
-import ConsentMainPage from "./components/resources-consent/content-main/ConsentMainPage"
-import Content from "./components/resources-consent/content/Content"
-import HealthcareProviders from "./components/resources-consent/HealthcareProviders"
-
+import Glossary from "./components/resources-consent/glossary/Glossary";
+import ConsentMainPage from "./components/resources-consent/content-main/ConsentMainPage";
+import Content from "./components/resources-consent/content/Content";
+import HealthcareProviders from "./components/resources-consent/HealthcareProviders";
+import Home from "./components/Home.js";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div style={styles.container}>
+        <div style={{backgroundColor: "#FFB6C1"}}>
           <Header />
           <Switch>
-          <Route path="/glossary" exact>
-            <Glossary />
-          </Route>
-          <Route path="/consent_main" exact>
-            <ConsentMainPage />
-          </Route>
-          <Route path="/consent_resources" exact>
-            <Content />
-          </Route>
-          <Route path="/providers" exact>
-            <HealthcareProviders />
-          </Route>
+            <Route path="/glossary" exact>
+              <Glossary />
+            </Route>
+            <Route path="/consent_main" exact>
+              <ConsentMainPage />
+            </Route>
+            <Route path="/consent_resources" exact>
+              <Content />
+            </Route>
+            <Route path="/providers" exact>
+              <HealthcareProviders />
+            </Route>
             <Route path="/PrEP" exact>
               <ResourcePage
                 header={pages.PrEP.header}
@@ -69,12 +67,12 @@ class App extends Component {
             <Route path="/blogmodal" exact>
               {/* modified */}
               <BlogWriting />
-            </Route>  
+            </Route>
             <Route path="/faq" exact>
               <Faq data={faqData} />
-              </Route>
+            </Route>
             <Route path="/" exact>
-              {/* our home page will go here! */}
+              <Home />
             </Route>
             <Route>
               {/* if the switch statement isn't resolved, render error component */}

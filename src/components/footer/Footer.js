@@ -6,12 +6,13 @@ class Footer extends Component {
   render() {
     return (
       <div>
-        <div style={styles.footerBar}>
-          <button style={styles.button} onClick={() => this.props.history.push('/about_us')}>ABOUT</button>
+        <footer style={styles.footerBar}>
+          {/* <button style={styles.button} onClick={() => this.props.history.push('/about_us')}>ABOUT</button>
           <button style={styles.button} onClick={() => this.props.history.push('/dev_info')}>DEVELOPERS</button>
           <button style={styles.button} onClick={() => this.props.history.push('/privacy_page')}>PRIVACY</button>
-          <button style={styles.button} onClick={() => this.props.history.push('/faq')}>FAQ</button>
-        </div>
+          <button style={styles.button} onClick={() => this.props.history.push('/faq')}>FAQ</button> */}
+          <span style={{display: "inline", verticalAlign: "center", paddingTop: "10px", fontFamily: "'Montserrat', sans-serif",}}>&copy;2020, Joseph Barsness, Gambhir Kunwar, Yiyu Tian, Xiaoxia Yin</span>
+        </footer>
       </div>
     );
   }

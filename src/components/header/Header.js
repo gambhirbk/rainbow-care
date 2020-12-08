@@ -22,32 +22,46 @@ class Header extends Component {
   onSearch = (e) => {
     e.preventDefault();
     // route to searched endpoint
-    this.props.history.push(this.state.search)
+    this.props.history.push(this.state.search);
   };
 
   render() {
     return (
       <div>
         <div style={styles.headerBar}>
-          <button
-            style={styles.button}
-            onClick={() => this.props.history.push("/")}
-          >
-            HOME
-          </button>
-          <button
-            style={styles.button}
-            onClick={() => this.props.history.push("/resources")}
-          >
-            RESOURCES
-          </button>
-          <button
-            style={styles.button}
-            onClick={() => this.props.history.push("/glossary")}
-          >
-            GLOSSARY
-          </button>
-          <button style={styles.button} onClick={() => this.props.history.push("/bodystories")}>BODY STORIES</button>
+          <h1 style={styles.title}>Rainbow Care</h1>
+          <nav style={{display: "flex", justifyContent: "center",}}>
+            <button
+              style={styles.button}
+              onClick={() => this.props.history.push("/")}
+            >
+              Home
+            </button>
+            <button
+              style={styles.button}
+              onClick={() => this.props.history.push("/resources")}
+            >
+              Resources
+            </button>
+            <button
+              style={styles.button}
+              onClick={() => this.props.history.push("/bodystories")}
+            >
+              Body Stories
+            </button>
+            <button
+              style={styles.button}
+              onClick={() => this.props.history.push("/faq")}
+            >
+              FAQ
+            </button>
+            <button
+              style={styles.button}
+              onClick={() => this.props.history.push("/glossary")}
+            >
+              Glossary
+            </button>
+          </nav>
           <form style={styles.search} onSubmit={this.onSearch}>
             <input
               type="text"
@@ -56,14 +70,6 @@ class Header extends Component {
               placeholder="search..."
               onChange={this.handleChange}
             />
-            {/*html form button - default behavior is onSubmit*/}
-            <button style={styles.searchButton}>
-              <img
-                src="./img/search.png"
-                alt="Search button"
-                style={styles.searchButton}
-              />
-            </button>
           </form>
         </div>
       </div>

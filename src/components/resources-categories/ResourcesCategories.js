@@ -10,7 +10,7 @@ class ResourcesCategories extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{backgroundColor:"pink", fontFamily: "'Roboto', sans-serif"}}>
         <div>
           {this.props.categories.map((group, i) => (
             <div key={i}>
