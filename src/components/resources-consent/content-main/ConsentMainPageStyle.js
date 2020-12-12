@@ -1,22 +1,26 @@
 const styles = {
     header: {
         fontSize: 30,
-        color: "#2699FB",
         float: "center",
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 70,
-        marginBottom: 5,
+        marginTop: 50,
+        marginBottom: 20,
+        fontFamily: "'Ubuntu', sans-serif", 
+        color: "#623F7F", 
+        fontWeight: "bold"
     },
     body: {
-        fontSize: 12,
-        color: "#2699FB",
+        fontSize: 17,
+        fontFamily: "'Roboto', sans-serif",
+        color: "black",
+        float: "center",
         display: 'flex',
         alignItems: 'left',
         justifyContent: 'left',
         marginTop: 0,
-        marginBottom: 100,
+        marginBottom: 20,
     }, 
     buttonRow: {
         float: "center",
@@ -24,6 +28,8 @@ const styles = {
         alignItems: 'center',
         justifyContent: 'center',
         marginBottom: 10,
+        fontSize: 17,
+        fontFamily: "'Roboto', sans-serif",
     },
     button: {
         marginLeft: 35,

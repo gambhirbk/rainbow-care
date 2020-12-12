@@ -14,7 +14,7 @@ class ConsentMainPage extends Component {
     return (
       <div>
         <h1 style={styles.header}> Learn about consent </h1> 
-        <div style={styles.body}> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <div style={styles.body}> Consent, vital in any relationship, is closely tied to power dynamics and the way they play out in both sexual and non-sexual relationships. Consent plays out differently in queer relationships than in heterosexual ones, due to both distinct power dynamics and a less rigid social perception of the roles in the relationship. Learning about consent in the queer community is illuminating for both queer and non-queer people; yet, a lot of discussions around consent seem to be missing this perspective.
         </div>
 
         <div style={styles.buttonRow}> Click here to read more about Consent </div> 
