@@ -101,10 +101,10 @@ function BodyBlog() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    REasdoiogeahinog edaf
+                    Exploring my sexual identity 
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
-                    dafadhogadjsogjeawogneiowng 
+                    Rainbow RRRR
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -113,7 +113,7 @@ function BodyBlog() {
                   <Avatar src="https://image.shutterstock.com/image-vector/queer-proud-slogan-poster-colorful-260nw-1478756762.jpg" />
                   <Box ml={2}>
                     <Typography variant="subtitle2" component="p">
-                      GEageano Ac
+                      Ashley
                     </Typography>
                     <Typography variant="subtitle2" color="textSecondary" component="p">
                       May 14, 2020
@@ -136,22 +136,22 @@ function BodyBlog() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    Rinino Noaege
+                    How does it feel to come out?
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
-                    adgegeaoihion oi hdaiogheogiu eoa
+                    Oh Yeah!
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions className={classes.cardActions}>
                 <Box className={classes.author}>
-                  <Avatar src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80" />
+                  <Avatar src="https://media.npr.org/assets/img/2019/09/23/gettyimages-1164295667-bbd4a7dda2a6c0087ea8b4a313611e1bfe421a98-s800-c85.jpg" />
                   <Box ml={2}>
                     <Typography variant="subtitle2" component="p">
-                      Guy Clemons
+                      Rela
                     </Typography>
                     <Typography variant="subtitle2" color="textSecondary" component="p">
-                      May 14, 2020
+                      July 30, 2020
                     </Typography>
                   </Box>
                 </Box>
@@ -171,20 +171,19 @@ function BodyBlog() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    React useContext
+                    My favorite queer movies
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                    across all continents except Antarctica
+                    These are the best LGBTQ movies and TV series
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions className={classes.cardActions}>
                 <Box className={classes.author}>
-                  <Avatar src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+                  <Avatar src="https://cdn.vox-cdn.com/thumbor/zP4AZc6c-ecPsqB03jiZcWBRcJ0=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21856468/queer_disney_board_yass_1.jpg" />
                   <Box ml={2}>
                     <Typography variant="subtitle2" component="p">
-                      Guy Dahofiegho
+                      Pussycat
                     </Typography>
                     <Typography variant="subtitle2" color="textSecondary" component="p">
                       Nov 30, 2020
@@ -207,22 +206,22 @@ function BodyBlog() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    FEAGOIE GEOINO 
+                    Today I got help, Finanlly
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
-                    agihwoieghon gehaoihoni 1gae
+                    Ways to get help:
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions className={classes.cardActions}>
                 <Box className={classes.author}>
-                  <Avatar src="https://images.unsplash.com/photo-1584999734482-0361aecad844?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80" />
+                  <Avatar src="https://snworksceo.imgix.net/asp/545e22cc-0166-44bc-b777-d1d36e279e67.sized-1000x1000.jpeg?w=1000" />
                   <Box ml={2}>
                     <Typography variant="subtitle2" component="p">
-                      Guy Clemons
+                      Tonny
                     </Typography>
                     <Typography variant="subtitle2" color="textSecondary" component="p">
-                      May 14, 2020
+                      Jan 28, 2020
                     </Typography>
                   </Box>
                 </Box>

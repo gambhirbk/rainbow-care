@@ -7,9 +7,9 @@ class BlogMain extends Component {
     return (
       <div>
         <div style={styles.header}>STORIES OF MY BODY</div>
-        <div style={styles.buttonRow}>
+        <div style={styles.buttonRowMain}>
           <button style={styles.button} onClick={() => this.props.history.push('/bodyblogs')}>Explore the Community</button>
-          <button style={styles.button} onClick={() => this.props.history.push('/blogmodal')}>Write Your Stories</button>
+          <button style={styles.button} onClick={() => this.props.history.push('/blogwriting')}>Write Your Stories</button>
         </div>
       </div>
     );

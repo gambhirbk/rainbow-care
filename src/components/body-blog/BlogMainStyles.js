@@ -11,15 +11,23 @@ const styles = {
         fontFamily: "'Ubuntu', sans-serif", 
         fontWeight: "bold"
     },
-    buttonRow: {
+    buttonRowMain: {
         float: "center",
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
     },
+
+    buttonRowWriting: {
+        float: "right",
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+
     button: {
-        marginLeft: 35,
-        marginRight: 60,
+        marginLeft: 30,
+        marginRight: 40,
         borderRadius: 10,
         backgroundColor: "#e5ebe4",
         border: "none",
@@ -27,7 +35,18 @@ const styles = {
         color: "#037b82",
         padding: 10,
         marginBottom: 200,
-        
+    },
+
+    buttonWriting: {
+        marginLeft: 40,
+        marginRight: 50,
+        borderRadius: 10,
+        backgroundColor: "#e5ebe4",
+        border: "none",
+        fontSize: 20,
+        color: "#037b82",
+        padding: 10,
+        marginBottom: 10,
     }
 }
 

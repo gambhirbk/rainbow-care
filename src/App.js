@@ -64,7 +64,7 @@ class App extends Component {
             <Route path="/bodyblogs" exact>
               <BodyBlog />
             </Route>
-            <Route path="/blogmodal" exact>
+            <Route path="/blogwriting" exact>
               {/* modified */}
               <BlogWriting />
             </Route>
