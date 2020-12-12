@@ -70,7 +70,6 @@ function BodyBlog() {
       <AppBar className={classes.appBar} position="static">
         <Toolbar>
           <Typography variant="h6" color="primary" >
-            Healthcare Providers
           </Typography>
         </Toolbar>
       </AppBar>

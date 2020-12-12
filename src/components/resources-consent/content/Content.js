@@ -82,15 +82,15 @@ function Content() {
               <CardActionArea>
                 <CardMedia
                   className={classes.media}
-                  image="https://assets.teenvogue.com/photos/5cf549c9050ce574256f3031/16:9/w_2560%2Cc_limit/891A8698-(1)fbfb.jpg"
+                  image="https://mcgilldaily.com/queernessandsexuality/visuals/SPECIALISSUE_Consent_RahmaWiryomartono_web.jpg"
                   title="fkdfdskjlsajlfkklsdfljkdf"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    dsfjksadfhkshdjkas sdfjh
+                    Talking about queer consent 
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
-                    dsjldsjkdsfjkdsjklskdjsdklklas
+                    The dynamics of consent in queer relationship merit their own discussion 
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -99,7 +99,7 @@ function Content() {
                   <Avatar src="https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/10830741_1541466989438667_3475538641326817894_o.jpg?_nc_cat=108&ccb=2&_nc_sid=09cbfe&_nc_ohc=0Atu-_f_5zYAX9bGfWF&_nc_ht=scontent-sea1-1.xx&oh=5e71343563f9a07051130b4ec17549a8&oe=5FF2EFB1" />
                   <Box ml={2}>
                     <Typography variant="subtitle2" component="p">
-                      Ghakdkjlka Ac 
+                    Written by Rebecca Kahn | Illustration by Rahma Wiryomartono
                     </Typography>
                     <Typography variant="subtitle2" color="textSecondary" component="p">
                       Feb 12, 2012
@@ -152,12 +152,12 @@ function Content() {
               <CardActionArea>
                 <CardMedia
                   className={classes.media}
-                  image="https://mcgilldaily.com/queernessandsexuality/visuals/SPECIALISSUE_Consent_RahmaWiryomartono_web.jpg"
+                  image="https://assets.teenvogue.com/photos/5cf549c9050ce574256f3031/16:9/w_2560%2Cc_limit/891A8698-(1)fbfb.jpg"
                   title="Contemplative Reptile"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    REACT TRNLKGGDGKLHD
+                    How to have Sex if You're Queer: What to Know About Protection, Consent, and What Queer Sex Means
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
                   The dynamics of consent in queer relationships merit their own discussion
@@ -169,10 +169,10 @@ function Content() {
                   <Avatar src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
                   <Box ml={2}>
                     <Typography variant="subtitle2" component="p">
-                      Guy Dahofiegho
+                    BY YANA TALLON-HICKS
                     </Typography>
                     <Typography variant="subtitle2" color="textSecondary" component="p">
-                      Nov 30, 2020
+                      June 4, 2019
                     </Typography>
                   </Box>
                 </Box>
