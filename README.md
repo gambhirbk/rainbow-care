@@ -1,6 +1,7 @@
-In the project directory, you can run:
-### 'npm install -save'
+In the project directory, you can run to install all the dependencies:
+### `npm install -save`
 
+And then you run:
 ### `npm start`
 
 Runs the app in the development mode.\
