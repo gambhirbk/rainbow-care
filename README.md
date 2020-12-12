@@ -6,7 +6,7 @@ According to the 2013 National School Climate Survey, fewer than five percent of
 \
 \
 In the project directory, you can run to install all the dependencies:
-### `npm install -save`
+### `npm install --save`
 
 And then you run:
 ### `npm start`
