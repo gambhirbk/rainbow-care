@@ -11,6 +11,7 @@ class ResourcesMain extends Component {
           <button style={styles.button} onClick={() => this.props.history.push('/categories')}>By Category</button>
           <button style={styles.button} onClick={() => this.props.history.push('/providers')}>Healthcare Providers</button>
           <button style={styles.button} onClick={() => this.props.history.push('/consent_main')}>Consent</button>
+          <button style={styles.button} onClick={() => this.props.history.push('/chat_with_doctors')}>Chat With Doctors</button>
         </div>
       </div>
     );
