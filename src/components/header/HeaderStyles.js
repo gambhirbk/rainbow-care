@@ -1,5 +1,7 @@
 const styles = {
     title: {
+      width: "100%",
+      height: "100%",
       float: "center",
       textAlign: "center",
       color: "#3377AA",
@@ -19,6 +21,7 @@ const styles = {
       color: "#037b82",
       fontFamily: "'Padauk', sans-serif",
       marginLeft: "20px",
+      paddingBottom: "1em"
     },
     search: {
       display: "flex",

@@ -11,7 +11,7 @@ class Footer extends Component {
           <button style={styles.button} onClick={() => this.props.history.push('/dev_info')}>DEVELOPERS</button>
           <button style={styles.button} onClick={() => this.props.history.push('/privacy_page')}>PRIVACY</button>
           <button style={styles.button} onClick={() => this.props.history.push('/faq')}>FAQ</button> */}
-          <span style={{display: "inline", verticalAlign: "center", paddingTop: "10px", fontFamily: "'Montserrat', sans-serif",}}>&copy;2020, Joseph Barsness, Gambhir Kunwar, Yiyu Tian, Xiaoxia Yin</span>
+          <span style={{display: "inline", verticalAlign: "center", paddingTop: "10px", fontFamily: "'Montserrat', sans-serif",}}>&copy;2021, Gambhir Kunwar, Yiyu Tian</span>
         </footer>
       </div>
     );
