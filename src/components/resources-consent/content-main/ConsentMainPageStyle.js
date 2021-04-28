@@ -42,17 +42,6 @@ const styles = {
         padding: 10,
         marginBottom: 200,
         
-    },
-    consentList: {
-        fontSize: 16,
-        float: "center",
-        justifyContent: 'center',
-        marginTop: 10,
-        marginBottom: 20,
-        fontFamily: "'Ubuntu', sans-serif", 
-        color: "#623F7F", 
-        fontWeight: "bold",
-        marginLeft: 400,
     }
 }
 

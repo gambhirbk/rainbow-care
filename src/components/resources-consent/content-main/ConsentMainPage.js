@@ -17,17 +17,10 @@ class ConsentMainPage extends Component {
         <div style={styles.body}> Consent, vital in any relationship, is closely tied to power dynamics and the way they play out in both sexual and non-sexual relationships. Consent plays out differently in queer relationships than in heterosexual ones, due to both distinct power dynamics and a less rigid social perception of the roles in the relationship. Learning about consent in the queer community is illuminating for both queer and non-queer people; yet, a lot of discussions around consent seem to be missing this perspective.
         </div>
 
-        <div style={styles.buttonRow}> Click links below to read more about Consent </div> 
-        <ul style={styles.consentList}>
-          <li>
-            <a href="https://www.plannedparenthood.org/learn/teens/lgbtq/info-and-resources-lgbtq-teens-and-allies">Planned Parenthood</a>
-          </li>
-        
-          <li>
-            <a href="https://teenhealthsource.com/blog/queering-sexual-education/">Teen Health</a>
-          </li>
-        </ul>
-        
+        <div style={styles.buttonRow}> Click here to read more about Consent </div> 
+        <div style={styles.buttonRow}>
+          <Link to="consent_resources" style={styles.button}>Learn more</Link>
+        </div>
       </div>
     );
   }

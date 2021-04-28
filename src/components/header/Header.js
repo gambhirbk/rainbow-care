@@ -27,64 +27,50 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <div style={styles.headerBar}>
-          <div className="row justify-content-start">
-            <h1 style={styles.title}>Rainbow Care</h1>
-          </div>
-          <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{display: "flex", justifyContent: "center",}}>
-            <div className="container-fluid">
-                <a className="navbar-brand" href="/"> Home </a>
-                <button style={styles.button} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="resource"
-                  onClick={() => this.props.history.push("/")}>
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-            <div className="collapse navbar-collapse" id="resource">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <a className="navbar-brand" href="/resources">Resource</a>
-                    {/* <button style={styles.button} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-                        onClick={() => this.props.history.push("/")}> */}
-                    <span className="navbar-toggler-icon"></span>
-                {/* </button> */}
-                </li>
-              </ul>
-            </div>
-          </div>
-
-            {/* <div className="col-0">
-              <button
-                style={styles.button}
-                onClick={() => this.props.history.push("/resources")}
-              >
-                Resources
-              </button>
-            </div> */}
-            {/* <div className="col-0">
-              <button
-                style={styles.button}
-                onClick={() => this.props.history.push("/bodystories")}
-              >
-                Body Stories
-              </button>
-            </div>
-            <div className="col-0">
-              <button
-                style={styles.button}
-                onClick={() => this.props.history.push("/faq")}
-              >
-                FAQ
-              </button>
-            </div>
-            <div className="col">
-              <button
-                style={styles.button}
-                onClick={() => this.props.history.push("/glossary")}
-              >
-                Glossary
-              </button>
-            </div> */}
+          <h1 style={styles.title}>Rainbow Care</h1>
+          <nav style={{display: "flex", justifyContent: "center",}}>
+            <button
+              style={styles.button}
+              onClick={() => this.props.history.push("/")}
+            >
+              Home
+            </button>
+            <button
+              style={styles.button}
+              onClick={() => this.props.history.push("/resources")}
+            >
+              Resources
+            </button>
+            <button
+              style={styles.button}
+              onClick={() => this.props.history.push("/bodystories")}
+            >
+              Body Stories
+            </button>
+            <button
+              style={styles.button}
+              onClick={() => this.props.history.push("/faq")}
+            >
+              FAQ
+            </button>
+            <button
+              style={styles.button}
+              onClick={() => this.props.history.push("/glossary")}
+            >
+              Glossary
+            </button>
           </nav>
+          <form style={styles.search} onSubmit={this.onSearch}>
+            <input
+              type="text"
+              name="search"
+              value={this.state.search}
+              placeholder="search..."
+              onChange={this.handleChange}
+            />
+          </form>
         </div>
       </div>
     );

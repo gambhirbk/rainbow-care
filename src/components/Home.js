@@ -3,9 +3,7 @@ import React, { Component } from "react";
 class Home extends Component {
   render() {
     return (
-      <div className="container">
-      {/* <div className="row">
-      <div className="col"> */}
+      <div>
         <div style={{ display: "flex", justifyContent: "space-evenly" }}>
           <article>
             <header>
@@ -37,24 +35,17 @@ class Home extends Component {
                 allies.
               </p>
           </article>
-          </div>
-          <div className="col">
           <article>
-          <   div className="fit my-4" style={{ maxHeight:"40%", maxWidth: "60%",
-              marginLeft: "auto", marginRight: "auto"
-          }}>
+              <div>
                 <img
                   src="./img/infinity.png"
                   alt="Infinity Rainbow Sign"
                   width="600"
-                  className="img-fluid my-4 float-right fit"
                 ></img>
               </div>
           </article>
-          </div>
         </div>
-      // </div>
-      // </div>
+      </div>
     );
   }
 }
